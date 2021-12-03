@@ -25,7 +25,7 @@ public class Eagle extends Bird implements Fly {
     /**
      * take off, must be on ground
      */
-    @Override
+    
     public void takeOff() {
     	if (!this.flying && this.altitude == 0) {
     		this.flying = true;
@@ -38,6 +38,7 @@ public class Eagle extends Bird implements Fly {
      * @param meters depths decrease
      * @return depth
      */
+    
     @Override
     public int ascend(int meters) {
         if (this.flying) {
